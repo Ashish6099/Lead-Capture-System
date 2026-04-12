@@ -4,7 +4,7 @@ A powerful, beginner-friendly **lead generation system** built using **n8n (self
 
 This project captures leads from a form, stores them, and instantly sends notifications to both the user and admin.
 
----
+
 
 # 📌 FEATURES
 
@@ -16,7 +16,7 @@ This project captures leads from a form, stores them, and instantly sends notifi
 * ✅ Fully self-hosted (free setup)
 * ✅ Beginner to production-ready architecture
 
----
+
 
 # 🧩 PROJECT STRUCTURE
 
@@ -26,7 +26,7 @@ workflow.json (cleaned)
 README.md
 ```
 
----
+
 
 # ⚙️ STEP 1: SETUP n8n LOCALLY (DOCKER)
 
@@ -34,7 +34,7 @@ README.md
 
 Download and install Docker Desktop.
 
----
+
 
 ## 2. Run n8n Container
 
@@ -47,7 +47,7 @@ docker run -it --rm ^
 n8nio/n8n
 ```
 
----
+
 
 ## 3. Access n8n
 
@@ -57,7 +57,7 @@ Open browser:
 http://localhost:5678
 ```
 
----
+
 
 # ▶️ STEP 2: START & STOP n8n
 
@@ -75,7 +75,7 @@ Press:
 CTRL + C
 ```
 
----
+
 
 ## ⚡ FAST METHOD (BAT FILE)
 
@@ -95,7 +95,7 @@ docker start n8n || docker run -it -p 5678:5678 --name n8n n8nio/n8n
 start-n8n.bat
 ```
 
----
+
 
 ### Create STOP file
 
@@ -110,7 +110,7 @@ Save as:
 stop-n8n.bat
 ```
 
----
+
 
 # 🌐 STEP 3: WEBHOOK SETUP
 
@@ -118,14 +118,14 @@ stop-n8n.bat
 
 * Add **Webhook Node**
 
----
+
 
 ## 2. Configure Webhook
 
 * HTTP Method: `POST`
 * Path: `lead-form`
 
----
+
 
 ## 3. Test URL
 
@@ -133,7 +133,7 @@ stop-n8n.bat
 /webhook-test/lead-form
 ```
 
----
+
 
 ## 4. Production URL
 
@@ -141,7 +141,7 @@ stop-n8n.bat
 /webhook/lead-form
 ```
 
----
+
 
 ## 5. Connect to Form
 
@@ -149,11 +149,11 @@ stop-n8n.bat
 <form action="YOUR_WEBHOOK_URL" method="POST">
 ```
 
----
+
 
 # 📊 STEP 4: GOOGLE SHEETS SETUP
 
----
+
 
 ## 1. Create Google Sheet
 
@@ -163,14 +163,14 @@ Columns:
 Name | Email | Contact | Message | Date
 ```
 
----
+
 
 ## 2. Add Google Sheets Node in n8n
 
 * Operation: Append Row
 * Connect Google Account (OAuth)
 
----
+
 
 ## 3. Map Fields
 
@@ -182,11 +182,11 @@ Message → {{$json["Message"]}}
 Date → {{$now}}
 ```
 
----
+
 
 # 📧 STEP 5: SMTP EMAIL SETUP
 
----
+
 
 ## OPTION 1: Gmail SMTP (FREE)
 
@@ -200,28 +200,28 @@ User: your-email@gmail.com
 Password: App Password (not normal password)
 ```
 
----
+
 
 ## ⚠️ Important (Gmail)
 
 * Enable **2-Step Verification**
 * Generate **App Password**
 
----
+
 
 ## 2. Email to User Node
 
 * To: `{{$json["Email"]}}`
 * Subject: `Thanks for contacting us`
 
----
+
 
 ## 3. Email to Admin Node
 
 * To: `your-email@gmail.com`
 * Subject: `New Lead Received 🎯`
 
----
+
 
 ## Email Body Example:
 
@@ -236,11 +236,11 @@ Message: {{$json["Message"]}}
 Date: {{$now}}
 ```
 
----
+
 
 # 🌍 STEP 6: PUBLIC ACCESS (NGROK)
 
----
+
 
 Run:
 
@@ -248,7 +248,7 @@ Run:
 docker run -it -e NGROK_AUTHTOKEN=YOUR_TOKEN ngrok/ngrok http host.docker.internal:5678
 ```
 
----
+
 
 ## Replace in Form:
 
@@ -256,7 +256,7 @@ docker run -it -e NGROK_AUTHTOKEN=YOUR_TOKEN ngrok/ngrok http host.docker.intern
 https://your-ngrok-url/webhook/lead-form
 ```
 
----
+
 
 # ✅ ADVANTAGES
 
@@ -266,7 +266,7 @@ https://your-ngrok-url/webhook/lead-form
 * 🔄 Fully customizable workflows
 * 📊 Easy data management
 
----
+
 
 # ⚠️ DISADVANTAGES / LIMITATIONS
 
@@ -282,11 +282,11 @@ https://your-ngrok-url/webhook/lead-form
 
 * Sending limits per day
 
----
+
 
 # 🛠️ SOLUTIONS
 
----
+
 
 ## 🔧 Solution 1: Use VPS (Recommended)
 
@@ -294,35 +294,34 @@ https://your-ngrok-url/webhook/lead-form
 * Runs 24/7
 * No ngrok needed
 
----
+
 
 ## 🔧 Solution 2: Use Paid ngrok
 
 * Fixed domain
 * No URL change
 
----
+
 
 ## 🔧 Solution 3: Use Email Services
 
 * SendGrid / Resend
 * Avoid Gmail limits
 
----
+
 
 # 📸 SCREENSHOTS
+LEAD FORM
 <img width="800" height="852" alt="image" src="https://github.com/user-attachments/assets/4a8db4b5-8617-49e3-a90e-2f0fda3079e4" />
+N8N WORKFLOWS
 <img width="1900" height="1020" alt="Screenshot 2026-04-12 145302" src="https://github.com/user-attachments/assets/7828109f-1ae7-4178-9077-236ba59e3dfb" />
 
-
-
----
 
 # 🎥 DEMO VIDEO
 
 (Add your YouTube demo link here)
 
----
+
 
 # 🧠 FUTURE IMPROVEMENTS
 
@@ -331,8 +330,6 @@ https://your-ngrok-url/webhook/lead-form
 * Dashboard analytics
 * WhatsApp automation
 
----
-
 # 💼 USE CASES
 
 * Freelancers
@@ -340,14 +337,12 @@ https://your-ngrok-url/webhook/lead-form
 * Startups
 * SaaS Products
 
----
-
 # 👨‍💻 AUTHOR
 
 **Rauni.ai**
 https://ashish6099.github.io/rauni.ai/
 Follow and Subscribe
----
+
 
 # ⭐ SUPPORT
 
