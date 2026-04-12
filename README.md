@@ -311,8 +311,10 @@ https://your-ngrok-url/webhook/lead-form
 ---
 
 # 📸 SCREENSHOTS
+<img width="800" height="852" alt="image" src="https://github.com/user-attachments/assets/4a8db4b5-8617-49e3-a90e-2f0fda3079e4" />
+<img width="1900" height="1020" alt="Screenshot 2026-04-12 145302" src="https://github.com/user-attachments/assets/7828109f-1ae7-4178-9077-236ba59e3dfb" />
 
-(Add your screenshots here)
+
 
 ---
 
@@ -343,12 +345,13 @@ https://your-ngrok-url/webhook/lead-form
 # 👨‍💻 AUTHOR
 
 **Rauni.ai**
-
+https://ashish6099.github.io/rauni.ai/
+Follow and Subscribe
 ---
 
 # ⭐ SUPPORT
 
 If you found this useful, give it a ⭐ on GitHub!
 
----
+
 
