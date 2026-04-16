@@ -1,6 +1,6 @@
 {
   "_CREDENTIALS_AND_PLACEHOLDERS_GUIDE": {
-    "IMPORTANT": "Replace all placeholder values with your actual credentials before using this workflow",
+    "IMPORTANT": "Replace all placeholder values with your actual credentials before using this workflows",
     "YOUR_WEBHOOK_ID": "Get from n8n > Your workflow > Webhook node > Copy the Webhook URL and extract the ID from it",
     "YOUR_GOOGLE_SHEETS_DOCUMENT_ID": "Get from your Google Sheet URL: https://docs.google.com/spreadsheets/d/{YOUR_GOOGLE_SHEETS_DOCUMENT_ID}/edit - Copy the ID between /d/ and /edit",
     "YOUR_SPREADSHEET_NAME": "The name of your Google Sheet tab (default is 'Sheet1' or your custom sheet name)",
