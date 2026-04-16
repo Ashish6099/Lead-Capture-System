@@ -27,7 +27,6 @@ README.md
 ```
 
 
-
 # ⚙️ STEP 1: SETUP n8n LOCALLY (DOCKER)
 
 ## 1. Install Docker Desktop
