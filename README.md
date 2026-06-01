@@ -29,8 +29,6 @@ README.md
 
 Download and install Docker Desktop.
 
-
-
 ## 2. Run n8n Container
 
 Open **PowerShell / Command Prompt**:
@@ -41,8 +39,6 @@ docker run -it --rm ^
 -v %USERPROFILE%\.n8n:/home/node/.n8n ^
 n8nio/n8n
 ```
-
-
 
 ## 3. Access n8n
 
