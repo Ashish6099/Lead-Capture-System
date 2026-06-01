@@ -4,8 +4,6 @@ A powerful, beginner-friendly **lead generation system** built using **n8n (self
 
 This project captures leads from a form, stores them, and instantly sends notifications to both the user and admin.
 
-
-
 # 📌 FEATURES
 
 * ✅ Custom HTML Lead Form
