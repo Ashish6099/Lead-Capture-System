@@ -14,8 +14,6 @@ This project captures leads from a form, stores them, and instantly sends notifi
 * ✅ Fully self-hosted (free setup)
 * ✅ Beginner to production-ready architecture
 
-
-
 # 🧩 PROJECT STRUCTURE
 
 ```
