@@ -1,6 +1,6 @@
 # 🚀 AI Lead Capture Engine (n8n + Google Sheets + Email Automation)
 
-A powerful, beginner-friendly **lead generation system** built using **n8n (self-hosted)**, Google Sheets, and SMTP email automation.
+A powerful, beginner-friendly *lead generation system* built using **n8n (self-hosted)**, Google Sheets, and SMTP email automation.
 
 This project captures leads from a form, stores them, and instantly sends notifications to both the user and admin.
 
